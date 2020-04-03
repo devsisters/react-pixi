@@ -8,11 +8,14 @@
   "jsnext:module": "./dist/index.mjs",
   "types": "./index.d.ts",
   "author": "Patrick Brouwer",
+  "license": "MIT",
   "contributors": [
     "Devsisters Corp."
   ],
-  "license": "MIT",
-  "repository": "git+https://github.com/inlet/react-pixi.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inlet/react-pixi.git"
+  },
   "files": [
     "dist/",
     "LICENSE",
