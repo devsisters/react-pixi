@@ -6,12 +6,20 @@
   "umd:main": "umd.js",
   "module": "./dist/index.mjs",
   "jsnext:module": "./dist/index.mjs",
+  "types": "./index.d.ts",
   "author": "Patrick Brouwer",
   "contributors": [
     "Devsisters Corp."
   ],
   "license": "MIT",
   "repository": "git+https://github.com/inlet/react-pixi.git",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "index.js",
+    "index.d.ts",
+    "umd.js"
+  ],
   "scripts": {
     "docz:dev": "rimraf ./docs && docz dev",
     "docz:build": "rimraf ./docs && yarn build:prod && docz build",
@@ -30,13 +38,7 @@
     "test:watch": "jest --silent --watch",
     "prepare": "if-env CI=true && echo \"skip build\" || (npm run test && npm run eslint && npm run build)"
   },
-  "files": [
-    "dist/",
-    "LICENSE",
-    "index.js",
-    "umd.js"
-  ],
-  "typings": "./index.d.ts",
+
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
