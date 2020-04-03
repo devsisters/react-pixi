@@ -1,16 +1,5 @@
 {
   "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "modules": false,
-        "targets": {
-          "browsers": [
-            "last 2 versions"
-          ]
-        }
-      }
-    ],
     "@babel/preset-react"
   ],
   "plugins": [
@@ -23,8 +12,41 @@
           "targets": {
             "node": "current"
           }
-        }],
-        "@babel/preset-react"
+        }]
+      ]
+    },
+    "umd": {
+      "presets": [
+        ["@babel/preset-env", {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "> 0.25%",
+              "not dead"
+            ]
+          }
+        }]
+      ]
+    },
+    "cjs": {
+      "presets": [
+        ["@babel/preset-env", {
+          "modules": "commonjs",
+          "targets": {
+            "node": 10
+          }
+        }]
+      ]
+    },
+    "esm": {
+      "presets": [
+        ["@babel/preset-env", {
+          "modules": false,
+          "bugfixes": true,
+          "targets": {
+            "esmodules": true
+          }
+        }]
       ]
     }
   }
