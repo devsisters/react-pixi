@@ -1,8 +1,6 @@
 # React PIXI 🌈
 
-![release](https://img.shields.io/github/v/release/inlet/react-pixi)
-![downloads](https://img.shields.io/npm/dm/@inlet/react-pixi)
-[![CircleCI](https://img.shields.io/circleci/project/github/inlet/react-pixi/master.svg)](https://circleci.com/gh/inlet/react-pixi-fiber)
+![downloads](https://img.shields.io/npm/dm/@devsisters/react-pixi)
 ![license](https://img.shields.io/badge/license-MIT-green.svg)
 ![react](https://img.shields.io/badge/react-v16.8+-ff69b4.svg)
 ![pixi](https://img.shields.io/badge/pixi-v5+-ff69b4.svg)
@@ -10,6 +8,21 @@
 Write [PIXI](http://www.pixijs.com/) applications using React declarative style 👌
 
 ![logo](https://user-images.githubusercontent.com/17828231/61295022-6ffa6980-a7d7-11e9-9bff-e71670156cca.png)
+
+## About this fork
+
+This is custom build for additional optimizations and resolving React version [compatibility issue](https://github.com/inlet/react-pixi/issues/207)
+
+And this also experiments [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) features:
+
+- Enable Concurrent Mode
+- Suspense for PIXI.js resources
+
+## Compatibilities
+
+- `@inlet/react-pixi`: ![release](https://img.shields.io/github/v/release/inlet/react-pixi)
+- `react`: `v0.0.0-experimental-d7382b6c4`
+- `react-dom`: `v0.0.0-experimental-d7382b6c4`
 
 ## Install
 

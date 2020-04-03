@@ -1,6 +1,6 @@
 {
-  "name": "@inlet/react-pixi",
-  "version": "2.0.0",
+  "name": "@devsisters/react-pixi",
+  "version": "1.0.0",
   "description": "Write PixiJS applications using React declarative style.",
   "main": "./dist/index.js",
   "umd:main": "umd.js",
@@ -33,10 +33,8 @@
   "files": [
     "dist/",
     "LICENSE",
-    "index.d.ts",
     "index.js",
-    "umd.js",
-    "module.js"
+    "umd.js"
   ],
   "typings": "./index.d.ts",
   "devDependencies": {
