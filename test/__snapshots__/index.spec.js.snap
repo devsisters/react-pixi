@@ -75,6 +75,7 @@ Object {
     "batchedEventUpdates": [Function],
     "batchedUpdates": [Function],
     "createContainer": [Function],
+    "createPortal": [Function],
     "deferredUpdates": [Function],
     "discreteUpdates": [Function],
     "findHostInstance": [Function],
