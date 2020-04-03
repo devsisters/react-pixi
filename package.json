@@ -41,13 +41,13 @@
     "test:watch": "jest --silent --watch",
     "prepare": "if-env CI=true && echo \"skip build\" || (npm run test && npm run eslint && npm run build)"
   },
-
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@testing-library/react": "^10.0.2",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
@@ -63,11 +63,9 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
-    "idx": "^2.5.6",
     "if-env": "^1.0.4",
     "jest": "^24.8.0",
     "jest-webgl-canvas-mock": "^0.2.2",
-    "lodash": "^4.17.14",
     "pixi.js": "5.0.4",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
@@ -94,8 +92,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "@testing-library/react": "8.0.5",
     "fbjs": "^1.0.0",
+    "idx": "^2.5.6",
+    "lodash": "^4.17.15",
     "performance-now": "^2.1.0",
     "react-reconciler": "0.21.0-alpha.0"
   },
