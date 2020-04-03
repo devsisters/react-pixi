@@ -41,7 +41,6 @@
     "test:watch": "jest --silent --watch",
     "prepare": "if-env CI=true && echo \"skip build\" || (npm run test && npm run eslint && npm run build)"
   },
-
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
@@ -56,6 +55,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
     "canvas": "^2.6.1",
+    "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "docz": "^2.3.1",
     "eslint": "^7.0.0",
@@ -95,6 +95,8 @@
   "dependencies": {
     "@babel/runtime": "^7.9.6",
     "fbjs": "^1.0.0",
+    "idx": "^2.5.6",
+    "lodash": "^4.17.15",
     "performance-now": "^2.1.0",
     "react-reconciler": "0.25.1"
   },
