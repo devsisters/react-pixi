@@ -3,5 +3,5 @@ lib/
 dist/
 examples/
 .docz/
-.yarn-error.log
+yarn-error.log
 docs/
