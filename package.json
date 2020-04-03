@@ -1,6 +1,6 @@
 {
   "name": "@devsisters/react-pixi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write PixiJS applications using React declarative style.",
   "main": "./dist/index.js",
   "umd:main": "umd.js",
