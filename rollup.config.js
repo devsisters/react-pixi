@@ -58,7 +58,9 @@ function getConfig(dest, format) {
 const buildType = prod ? '' : '-dev'
 
 const configs = [
+  getConfig(`dist/react-pixi.cjs${buildType}.js`, 'cjs'),
   getConfig(`dist/react-pixi.umd${buildType}.js`, 'umd'),
+  getConfig(`dist/react-pixi.module${buildType}.js`, 'es'),
 ]
 
 export default configs
