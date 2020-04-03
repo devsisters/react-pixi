@@ -69,9 +69,9 @@
     "pixi.js": "5.0.4",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
+    "react": "^0.0.0-experimental-d7382b6c4",
+    "react-dom": "^0.0.0-experimental-d7382b6c4",
+    "react-test-renderer": "^0.0.0-experimental-d7382b6c4",
     "rimraf": "^2.6.3",
     "rollup": "^1.17.0",
     "rollup-plugin-babel": "^4.3.3",
@@ -87,8 +87,8 @@
   "peerDependencies": {
     "pixi.js": "^5.x.x",
     "prop-types": "^15.x.x",
-    "react": "^16.x.x",
-    "react-dom": "^16.x.x"
+    "react": "0.0.0-experimental-d7382b6c4",
+    "react-dom": "0.0.0-experimental-d7382b6c4"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
@@ -96,10 +96,14 @@
     "idx": "^2.5.6",
     "lodash": "^4.17.15",
     "performance-now": "^2.1.0",
-    "react-reconciler": "0.21.0-alpha.0"
+    "react-reconciler": "^0.0.0-experimental-d7382b6c4"
   },
   "resolutions": {
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^2.1.1",
+    "react": "0.0.0-experimental-d7382b6c4",
+    "react-dom": "0.0.0-experimental-d7382b6c4",
+    "react-is": "0.0.0-experimental-d7382b6c4",
+    "react-test-renderer": "0.0.0-experimental-d7382b6c4"
   },
   "jest": {
     "collectCoverage": false,
