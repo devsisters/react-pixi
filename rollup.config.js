@@ -25,7 +25,10 @@ function getConfig(dest, format) {
     },
     plugins: [
       json(),
-      babel({ exclude: 'node_modules/**' }),
+      babel({
+        extensions: ['.js', '.ts'],
+        exclude: 'node_modules/**',
+      }),
       resolve({
         browser: true,
         mainFields: ['main', 'jsnext']
