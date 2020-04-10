@@ -101,9 +101,54 @@ const App: React.FC = () => {
 };
 ```
 
-### UI Toolkit
+### UI Portal
 
-TODO
+Use custom portal for external React root.
+
+You can build UI in exist ReactDOM!
+
+Example:
+
+```tsx
+import ReactDOM from 'react-dom';
+import { createBridge } from '@devsisters/react-pixi/experimental';
+
+const uiRoot = ReactDOM.createRoot(
+  document.getElementById('ui-root')!
+);
+
+/**
+ * Create a bridge to communicate with external react root.
+ * You can use not only ReactDOM root here, but also anything satisfy the interface:
+ * ```tsx
+ * interface Root {
+ *   render(node: React.ReactNode): void;
+ * }
+ * ```
+ */
+const uiBridge = createBridge(uiRoot);
+
+```
+
+```tsx
+import { Portal } from '@devsisters/react-pixi/experimental';
+
+// In the <Stage> ...
+<Stage>
+  <Text text="Hello ReactPIXI!!!">
+  <Portal bridge={uiBridge}>
+    <div>Now you can use ReactDOM here!!</div>
+  </Portal>
+
+  <Container>
+    <Portal bridge={uiBridge}>
+      <div>
+        Even in a nested containers, just same as ReactDOM's Portal
+      </div>
+    </Portal>
+  </Container>
+</Stage>
+```
 
 ### Motion Toolkit
 
