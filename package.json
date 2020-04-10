@@ -27,11 +27,12 @@
     "docz:dev": "rimraf ./docs && docz dev",
     "docz:build": "rimraf ./docs && yarn build:prod && docz build",
     "eslint": "eslint .",
+    "type-check": "tsc --emitDeclarationOnly --outDir dist",
     "build:bundle": "rollup -c",
     "build:bundle:watch": "rollup -c --watch",
-    "build:cjs": "babel src --env-name cjs --out-dir dist --source-maps",
+    "build:cjs": "babel src --env-name cjs --extensions .js,.ts --out-dir dist --source-maps",
     "build:cjs:watch": "yarn build:cjs --watch",
-    "build:esm": "babel src --env-name esm --out-dir dist --out-file-extension .mjs --source-maps",
+    "build:esm": "babel src --env-name esm --extensions .js,.ts --out-dir dist --out-file-extension .mjs --source-maps",
     "build:esm:watch": "yarn build:esm --watch",
     "build:dev": "cross-env NODE_ENV=development concurrently \"yarn:build:bundle\" \"yarn:build:cjs\" \"yarn:build:esm\"",
     "build:dev:watch": "cross-env NODE_ENV=development concurrently \"yarn:build:umd:watch\" \"yarn:build:cjs:watch\" \"yarn:build:esm:watch\"",
@@ -39,7 +40,7 @@
     "build": "rimraf ./dist && yarn build:dev && yarn build:prod",
     "test": "jest --silent",
     "test:watch": "jest --silent --watch",
-    "prepare": "if-env CI=true && echo \"skip build\" || (npm run test && npm run eslint && npm run build)"
+    "prepare": "if-env CI=true && echo \"skip build\" || (yarn type-check && yarn test && yarn eslint && yarn build)"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -47,6 +48,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
     "@testing-library/react": "^10.0.4",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.35",
