@@ -9847,14 +9847,14 @@ react-docgen@^4.1.1:
     node-dir "^0.1.10"
     recast "^0.17.3"
 
-react-dom@0.0.0-experimental-d7382b6c4, react-dom@^0.0.0-experimental-d7382b6c4, react-dom@^16.8.6:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-d7382b6c4.tgz#6cba67117c84e3d1f88dcc10a39d50ceb272ea7a"
-  integrity sha512-uSnfuGM9WGom0U2sW0n2Y0jxCAEpzF3/m5vy31bLaniMxl/PdDsj9pnh4TT6/lQF3TwFYDVNTJ0UtiIiksCzPQ==
+react-dom@0.0.0-experimental-e5d06e34b, react-dom@^0.0.0-experimental-e5d06e34b, react-dom@^16.8.6:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-e5d06e34b.tgz#e90fd8a1f5ac18045798f276734feecdf107442e"
+  integrity sha512-E2jMRRCHs69jfI5YMnUEFEdWLv1FthDE52xDP67luRVGBU+Hc2xq06Eu+ukiHgCevgwAqBM4Q9HeYbQrcBvFdg==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.0.0-experimental-d7382b6c4"
+    scheduler "0.0.0-experimental-e5d06e34b"
 
 react-error-overlay@^5.1.6:
   version "5.1.6"
@@ -9880,10 +9880,10 @@ react-hot-loader@^4.8.4:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-is@0.0.0-experimental-d7382b6c4, react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-0.0.0-experimental-d7382b6c4.tgz#09aec0f4d467e3848f66730a340db43c9a1e5e1a"
-  integrity sha512-pzL1811P0FSNhOYOxLDBA39rivaQfG04JMcAYM4PNDyUyScpeN1n2BQZOoVJdP41yT+3Qcgo7cDYeX0K3VeC4A==
+react-is@0.0.0-experimental-d7382b6c4, react-is@0.0.0-experimental-e5d06e34b, react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-0.0.0-experimental-e5d06e34b.tgz#8998f278f535f5434811a31916ff48b13e322d68"
+  integrity sha512-4+hBHOR8sg4xGDzHUKJZNTw5EhlJgevALQ+gHjm/FRcjxVdCltkV654n9S3c+CUnBv4ZD+hdIskcZrX+m5u5Sw==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -9912,14 +9912,14 @@ react-perfect-scrollbar@^1.5.0:
     perfect-scrollbar "^1.4.0"
     prop-types "^15.6.1"
 
-react-reconciler@^0.0.0-experimental-d7382b6c4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.0.0-experimental-d7382b6c4.tgz#d58abbb90b4c7ec8169dc5faf9fd42fa733dcc04"
-  integrity sha512-1mkQO4bw0Y7fpLzgyjpRHuMkxtRZdGJsh82sXvPu7iame3MtDq2C/KJxUDGQhAOfustU/PHlj4khtnY4SMxRVA==
+react-reconciler@0.0.0-experimental-e5d06e34b, react-reconciler@^0.0.0-experimental-e5d06e34b:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.0.0-experimental-e5d06e34b.tgz#ced12593b590bfa9b53ffae61abc71bff102126c"
+  integrity sha512-WvtA/TYKlybt2RxiZXgXqQ5zpYgMXvCauqR7wBRoKXMvSczxEj/oTx83PWdt46+d+cTilbB2wgDmqOvgTEEROA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.0.0-experimental-d7382b6c4"
+    scheduler "0.0.0-experimental-e5d06e34b"
 
 react-shallow-renderer@^16.13.1:
   version "16.13.1"
@@ -9934,7 +9934,7 @@ react-simple-code-editor@^0.9.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.9.13.tgz#4567b23c5dff4e74d9c4f9f29f95b74a5d511b5a"
   integrity sha512-8FMXTGfSTi6fyIx3RDdteZ9GVEH5bxFubGgMWbZ1imon4cgi1juRSIeSmshPQW/CgletOfZdFK3Nswwk7L1vXA==
 
-react-test-renderer@0.0.0-experimental-d7382b6c4, react-test-renderer@^0.0.0-experimental-d7382b6c4:
+react-test-renderer@0.0.0-experimental-d7382b6c4:
   version "0.0.0-experimental-d7382b6c4"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-0.0.0-experimental-d7382b6c4.tgz#2b8e9b403b595f4c246c2f7a8d38c8fc20cdf1b4"
   integrity sha512-/Ucc6vVR40JoiforsnqyEk7Re2vSIu0q7SVJzNwZHsgaEaSaHIZoHrN3BQ46uFdWn998QIVJgfftzFRiS3b7Ww==
@@ -9944,10 +9944,20 @@ react-test-renderer@0.0.0-experimental-d7382b6c4, react-test-renderer@^0.0.0-exp
     react-shallow-renderer "^16.13.1"
     scheduler "0.0.0-experimental-d7382b6c4"
 
-react@0.0.0-experimental-d7382b6c4, react@^0.0.0-experimental-d7382b6c4, react@^16.8.6:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-d7382b6c4.tgz#92950eb579473b09dde71fe712bb72d1d8169c01"
-  integrity sha512-Vank+y71MBj1auABMJU5vPCWsoOZUdxQFF/Ezus31XAkj7ZNZcmHlP8Pir2ytiJNj4Y2cUmJ+ByMN3zPGERI6A==
+react-test-renderer@^0.0.0-experimental-e5d06e34b:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-0.0.0-experimental-e5d06e34b.tgz#e5abf9d1f26b195de9112a5d4b27edd28a498f87"
+  integrity sha512-v2S3UnrZwxBWKS3AxsDuzykQUDCMvaD8Nt4PU8KoFNahGB/PJRbuseRNJKrx8QuHoZ4bZ3FK3kciHUpqypHiHw==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "0.0.0-experimental-e5d06e34b"
+    react-shallow-renderer "^16.13.1"
+    scheduler "0.0.0-experimental-e5d06e34b"
+
+react@0.0.0-experimental-e5d06e34b, react@^0.0.0-experimental-e5d06e34b, react@^16.8.6:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-e5d06e34b.tgz#bfdbe2b228e1d1967330fc18b9e05331818f610d"
+  integrity sha512-2WUOtH5VE3cSyg22XxavfDoMQDIc51Pyudr/mrU1I1GcWIDKVg7QA/1dh5DlKyIvyWlM44pkwqz7V7gYHFzf2A==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -10670,6 +10680,14 @@ scheduler@0.0.0-experimental-d7382b6c4:
   version "0.0.0-experimental-d7382b6c4"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-d7382b6c4.tgz#0570f316766efc448a731f9f5c809012797273a2"
   integrity sha512-QSkiFsyZ8oGJWMq8dqiF9GlWxkgTvtCRUnwOPRMfpQowCowJMMr8jW8GZ7c81kXChM6gjNlLc3YWPKHB1F8MIw==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@0.0.0-experimental-e5d06e34b:
+  version "0.0.0-experimental-e5d06e34b"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-e5d06e34b.tgz#59a67c60b34c2c136b2f6d8daf9af74f91d97659"
+  integrity sha512-S4uANOeUKNI32GLMS28KvY7BHmtJL9Am3EsUB3WTr6Of5RNz1lEH0Qutc+j90GcgYM67l1qPOiO9sVLTdnTkxw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
