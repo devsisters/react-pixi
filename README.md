@@ -111,7 +111,10 @@ Example:
 
 ```tsx
 import ReactDOM from 'react-dom';
-import { createBridge } from '@devsisters/react-pixi/experimental';
+import { createBridge } from '@devsisters/react-pixi/dist/experimental';
+
+// Context can be shared between react-pixi and ReactDOM via the bridge.
+const ValueContext = React.createContext(0);
 
 const uiRoot = ReactDOM.createRoot(
   document.getElementById('ui-root')!
@@ -126,12 +129,17 @@ const uiRoot = ReactDOM.createRoot(
  * }
  * ```
  */
-const uiBridge = createBridge(uiRoot);
+const uiBridge = createBridge(uiRoot, {
+  // Only specified shared context here automatically forwarded to the outside root.
+  sharedContext: [
+    ValueContext,
+  ],
+});
 
 ```
 
 ```tsx
-import { Portal } from '@devsisters/react-pixi/experimental';
+import { Portal } from '@devsisters/react-pixi/dist/experimental';
 
 // In the <Stage> ...
 <Stage>
