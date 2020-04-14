@@ -9,6 +9,8 @@ import globals from 'rollup-plugin-node-globals'
 
 const prod = process.env.NODE_ENV === 'production'
 
+const extensions = ['.js', '.ts', '.tsx'];
+
 function getConfig(dest, format) {
   return {
     input: 'src/index.js',
@@ -26,10 +28,11 @@ function getConfig(dest, format) {
     plugins: [
       json(),
       babel({
-        extensions: ['.js', '.ts', '.tsx'],
+        extensions,
         exclude: 'node_modules/**',
       }),
       resolve({
+        extensions,
         browser: true,
         mainFields: ['main', 'jsnext']
       }),

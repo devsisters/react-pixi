@@ -7,6 +7,7 @@ import { useTick, useApp } from './hooks'
 import { withFilters } from './hoc'
 import { eventHandlers } from './utils/pixi'
 import { applyDefaultProps } from './utils/props'
+import { Portal, createBridge } from './experimental'
 
 /**
  * -------------------------------------------
@@ -32,3 +33,8 @@ export const Text = TYPES.Text
 export const TilingSprite = TYPES.TilingSprite
 export const SimpleMesh = TYPES.SimpleMesh
 export const SimpleRope = TYPES.SimpleRope
+
+export const experimental = {
+  Portal,
+  createBridge,
+}

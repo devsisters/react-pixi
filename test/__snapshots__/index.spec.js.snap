@@ -129,6 +129,10 @@ Object {
     "touchmove",
     "touchstart",
   ],
+  "experimental": Object {
+    "Portal": [Function],
+    "createBridge": [Function],
+  },
   "render": [Function],
   "useApp": [Function],
   "useTick": [Function],
