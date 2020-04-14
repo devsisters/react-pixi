@@ -199,7 +199,7 @@
     levenary "^1.1.1"
     semver "^5.5.0"
 
-"@babel/helper-create-class-features-plugin@^7.4.0", "@babel/helper-create-class-features-plugin@^7.5.0":
+"@babel/helper-create-class-features-plugin@^7.4.0":
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.5.0.tgz#02edb97f512d44ba23b3227f1bf2ed43454edac5"
   integrity sha512-EAoMc3hE5vE5LNhMqDOwB1usHvmRjCDAnH8CD4PVkX9/Yr3W/tcz8xE8QvdZxfsFBDICwZnF2UTHIqslRpvxmA==
@@ -794,13 +794,6 @@
   integrity sha512-kwj1j9lL/6Wd0hROD3b/OZZ7MSrZLqqn9RAZ5+cYYsflQ9HZBIKCUkr3+uL1MEJ1NePiUbf98jjiMQSv0NMR9g==
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
-
-"@babel/plugin-syntax-typescript@^7.2.0":
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.3.3.tgz#a7cc3f66119a9f7ebe2de5383cce193473d65991"
-  integrity sha512-dGwbSMA1YhVS8+31CnPR7LB4pcbrzcV99wQzby4uAfrkZPYZlQ7ImwdpzLqi6Z6IL02b8IAL379CaMwo0x5Lag==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/plugin-syntax-typescript@^7.8.3":
   version "7.8.3"
@@ -1411,16 +1404,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/plugin-transform-typescript@^7.3.2":
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.5.2.tgz#ea7da440d29b8ccdb1bd02e18f6cfdc7ce6c16f5"
-  integrity sha512-r4zJOMbKY5puETm8+cIpaa0RQZG/sSASW1u0pj8qYklcERgVIbxVbP2wyJA7zI1//h7lEagQmXi9IL9iI5rfsA==
-  dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.5.0"
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-syntax-typescript" "^7.2.0"
-
-"@babel/plugin-transform-typescript@^7.9.0":
+"@babel/plugin-transform-typescript@^7.3.2", "@babel/plugin-transform-typescript@^7.9.0":
   version "7.9.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.9.4.tgz#4bb4dde4f10bbf2d787fce9707fb09b483e33359"
   integrity sha512-yeWeUkKx2auDbSxRe8MusAG+n4m9BFY/v+lPjmQDgOFX5qnySkUY5oXzkp6FwPdsYqnKay6lorXYdC0n3bZO7w==
@@ -9880,7 +9864,7 @@ react-hot-loader@^4.8.4:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-is@0.0.0-experimental-d7382b6c4, react-is@0.0.0-experimental-e5d06e34b, react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
+react-is@0.0.0-experimental-e5d06e34b, react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "0.0.0-experimental-e5d06e34b"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-0.0.0-experimental-e5d06e34b.tgz#8998f278f535f5434811a31916ff48b13e322d68"
   integrity sha512-4+hBHOR8sg4xGDzHUKJZNTw5EhlJgevALQ+gHjm/FRcjxVdCltkV654n9S3c+CUnBv4ZD+hdIskcZrX+m5u5Sw==
@@ -9934,17 +9918,7 @@ react-simple-code-editor@^0.9.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.9.13.tgz#4567b23c5dff4e74d9c4f9f29f95b74a5d511b5a"
   integrity sha512-8FMXTGfSTi6fyIx3RDdteZ9GVEH5bxFubGgMWbZ1imon4cgi1juRSIeSmshPQW/CgletOfZdFK3Nswwk7L1vXA==
 
-react-test-renderer@0.0.0-experimental-d7382b6c4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-0.0.0-experimental-d7382b6c4.tgz#2b8e9b403b595f4c246c2f7a8d38c8fc20cdf1b4"
-  integrity sha512-/Ucc6vVR40JoiforsnqyEk7Re2vSIu0q7SVJzNwZHsgaEaSaHIZoHrN3BQ46uFdWn998QIVJgfftzFRiS3b7Ww==
-  dependencies:
-    object-assign "^4.1.1"
-    react-is "0.0.0-experimental-d7382b6c4"
-    react-shallow-renderer "^16.13.1"
-    scheduler "0.0.0-experimental-d7382b6c4"
-
-react-test-renderer@^0.0.0-experimental-e5d06e34b:
+react-test-renderer@0.0.0-experimental-e5d06e34b, react-test-renderer@^0.0.0-experimental-e5d06e34b:
   version "0.0.0-experimental-e5d06e34b"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-0.0.0-experimental-e5d06e34b.tgz#e5abf9d1f26b195de9112a5d4b27edd28a498f87"
   integrity sha512-v2S3UnrZwxBWKS3AxsDuzykQUDCMvaD8Nt4PU8KoFNahGB/PJRbuseRNJKrx8QuHoZ4bZ3FK3kciHUpqypHiHw==
@@ -10675,14 +10649,6 @@ sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
-scheduler@0.0.0-experimental-d7382b6c4:
-  version "0.0.0-experimental-d7382b6c4"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-d7382b6c4.tgz#0570f316766efc448a731f9f5c809012797273a2"
-  integrity sha512-QSkiFsyZ8oGJWMq8dqiF9GlWxkgTvtCRUnwOPRMfpQowCowJMMr8jW8GZ7c81kXChM6gjNlLc3YWPKHB1F8MIw==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 scheduler@0.0.0-experimental-e5d06e34b:
   version "0.0.0-experimental-e5d06e34b"
