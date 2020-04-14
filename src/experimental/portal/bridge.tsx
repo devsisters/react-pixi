@@ -4,7 +4,7 @@ import type { Context, ReactNode } from 'react';
 const ReactCurrentDispatcher =
     // @ts-ignore
     React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
-        .ReactCurrentDispatcher;
+        .ReactCurrentDispatcher.current;
 
 type Root = {
     render(element: ReactNode): void;
