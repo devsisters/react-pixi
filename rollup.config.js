@@ -26,7 +26,7 @@ function getConfig(dest, format) {
     plugins: [
       json(),
       babel({
-        extensions: ['.js', '.ts'],
+        extensions: ['.js', '.ts', '.tsx'],
         exclude: 'node_modules/**',
       }),
       resolve({

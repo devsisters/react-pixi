@@ -6,7 +6,8 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "allowJs": true,
-        "declaration": true
+        "declaration": true,
+        "jsx": "preserve"
     },
     "include": [
         "src/experimental"
