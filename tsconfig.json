@@ -8,5 +8,7 @@
         "allowJs": true,
         "declaration": true
     },
-    "include": ["src"]
+    "include": [
+        "src/experimental"
+    ]
 }
