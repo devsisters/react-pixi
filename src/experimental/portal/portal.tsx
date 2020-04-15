@@ -15,7 +15,7 @@ const Portal: React.FC<PortalProps> = ({
 
     const providers: JSX.Element[] = [];
     for (const Context of sharedContextSet) {
-        const contextValue = readContext(Context);
+        const contextValue = React.useContext(Context);
         const element = <Context.Provider value={contextValue}/>;
         providers.push(element);
     }
@@ -38,18 +38,3 @@ const Portal: React.FC<PortalProps> = ({
 };
 
 export default Portal;
-
-const ReactCurrentDispatcher =
-    // @ts-ignore
-    React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
-        .ReactCurrentDispatcher;
-
-function readContext<T>(Context: React.Context<T>, observedBits?: number) {
-    const dispatcher = ReactCurrentDispatcher.current;
-    if (dispatcher === null) {
-        throw new Error(
-            'react-pixi: readContext only be called in component render',
-        );
-    }
-    return dispatcher.readContext(Context, observedBits);
-}
