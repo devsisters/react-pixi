@@ -92,6 +92,7 @@ Object {
     "unbatchedUpdates": [Function],
     "updateContainer": [Function],
   },
+  "Portal": [Function],
   "SimpleMesh": "SimpleMesh",
   "SimpleRope": "SimpleRope",
   "Sprite": "Sprite",
@@ -99,6 +100,7 @@ Object {
   "Text": "Text",
   "TilingSprite": "TilingSprite",
   "applyDefaultProps": [Function],
+  "createBridge": [Function],
   "eventHandlers": Array [
     "click",
     "mousedown",
@@ -129,10 +131,6 @@ Object {
     "touchmove",
     "touchstart",
   ],
-  "experimental": Object {
-    "Portal": [Function],
-    "createBridge": [Function],
-  },
   "render": [Function],
   "useApp": [Function],
   "useTick": [Function],

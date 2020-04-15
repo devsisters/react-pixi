@@ -34,7 +34,10 @@ export const TilingSprite = TYPES.TilingSprite
 export const SimpleMesh = TYPES.SimpleMesh
 export const SimpleRope = TYPES.SimpleRope
 
-export const experimental = {
-  Portal,
-  createBridge,
-}
+/**
+ * -------------------------------------------
+ * Experimental API
+ * -------------------------------------------
+ */
+
+export { Portal, createBridge }
