@@ -1,9 +1,9 @@
 # React PIXI + Concurrent React = ?
 
 ![license](https://img.shields.io/badge/license-MIT-green.svg)
-![@devsisters/react-pixi](https://img.shields.io/badge/%40inlet%2Freact--pixi-v1.2.12-blue)
-![react](https://img.shields.io/badge/react-v0.0.0--experimental--d7382b6c4-orange)
-![react-dom](https://img.shields.io/badge/react--dom-v0.0.0--experimental--d7382b6c4-orange)
+![@devsisters/react-pixi](https://img.shields.io/badge/%40inlet%2Freact--pixi-v1.2.18-blue)
+![react](https://img.shields.io/badge/react-v0.0.0--experimental--e5d06e34b-orange)
+![react-dom](https://img.shields.io/badge/react--dom-v0.0.0--experimental--e5d06e34b-orange)
 
 Write [PIXI](http://www.pixijs.com/) applications using React declarative style 👌
 ![logo](https://user-images.githubusercontent.com/17828231/61295022-6ffa6980-a7d7-11e9-9bff-e71670156cca.png)
@@ -17,7 +17,11 @@ This only for internal research. use at your own risk.
 ## Install
 
 ```bash
-yarn add pixi.js @devsisters/react-pixi
+yarn add \
+  pixi.js \
+  @devsisters/react-pixi@experimental \
+  react@experimental \
+  react-dom@experimental
 ```
 
 ## Features
@@ -41,11 +45,15 @@ ReactDOM
 
 ### Enable Concurrent Mode (without ReactDOM)
 
-TODO
+TBD
 
 ### Suspense for resource loader
 
-WIP
+TBD
+
+Since the resource-loader has its own lifecycle, It's necessary to build a  scheduler to integrate with the React lifecycle. More exploration needed for better API design. However, It's not going to be right now because I'm currently using an optimized spritesheet.
+
+Example)
 
 ```jsx
 import React from 'react';
@@ -111,7 +119,7 @@ Example:
 
 ```tsx
 import ReactDOM from 'react-dom';
-import { createBridge } from '@devsisters/react-pixi/dist/experimental';
+import { createBridge } from '@devsisters/react-pixi';
 
 // Context can be shared between react-pixi and ReactDOM via the bridge.
 const ValueContext = React.createContext(0);
@@ -139,7 +147,7 @@ const uiBridge = createBridge(uiRoot, {
 ```
 
 ```tsx
-import { Portal } from '@devsisters/react-pixi/dist/experimental';
+import { Portal } from '@devsisters/react-pixi';
 
 // In the <Stage> ...
 <Stage>
@@ -158,6 +166,16 @@ import { Portal } from '@devsisters/react-pixi/dist/experimental';
 </Stage>
 ```
 
-### Motion Toolkit
+### Animations
 
-WIP
+TBD
+
+Note: There are some existing great animation engines. However, there are some problems to use as it is.
+
+- API is too low-level... Or
+- API strongly coupled to DOM
+- Using a separate ticker internally
+
+it will take some time to get a sufficiently high-level API with solving these problems. What I currently considering is building react hooks to integrate popmotion-pure to get an API similar to framer-motion or react-spring but only for populating values.
+
+Popmotion uses a separate ticker "framesync" internally, and has a preemptive competition with PIXI.js, which causes synchronization problems in low-performance environments. After leveraging Popmotion's high-level API, I need to replace the underlying engine to be customizable.
