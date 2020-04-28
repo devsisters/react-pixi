@@ -107,8 +107,6 @@ declare namespace _ReactPixi {
     WithPointLike<P>
     > & U & InteractionEvents & { ref?: React.Ref<T> };
 
-  type OverrideContainer<T extends PIXI.DisplayObject, P extends object> = Omit<Container<T>, keyof P> & P;
-
   type IContainer = Container<PIXI.Container>;
   type ISprite = Container<PIXI.Sprite, WithSource>;
   type IText = Container<PIXI.Text, WithSource>;
