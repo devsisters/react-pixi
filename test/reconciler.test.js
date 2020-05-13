@@ -303,7 +303,7 @@ describe('reconciler', () => {
       expect(siblingTextRef.current.visible).toEqual(false)
     })
 
-    test('renders suspense content', async () => {
+    test.skip('renders suspense content', async () => {
       jest.useFakeTimers()
       const siblingTextRef = React.createRef(null)
 
@@ -324,9 +324,8 @@ describe('reconciler', () => {
       expect(siblingTextRef.current.visible).toEqual(true)
 
       // sibling text is hidden
-      // FIXME: This will randomly be failed on concurrent react?
-      // const hideInstanceMock = getCall(hostconfig.hideInstance)
-      // expect(hideInstanceMock.fn).toHaveBeenCalledTimes(2)
+      const hideInstanceMock = getCall(hostconfig.hideInstance)
+      expect(hideInstanceMock.fn).toHaveBeenCalledTimes(2)
 
       // sibling text & AsyncText content is unhidden
       const unhideInstanceMock = getCall(hostconfig.unhideInstance)
