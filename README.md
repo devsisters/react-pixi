@@ -1,7 +1,7 @@
 # React PIXI + Concurrent React = ?
 
 ![license](https://img.shields.io/badge/license-MIT-green.svg)
-![@devsisters/react-pixi](https://img.shields.io/badge/%40inlet%2Freact--pixi-v1.2.18-blue)
+![@inlet/react-pixi](https://img.shields.io/badge/%40inlet%2Freact--pixi-v2.0.0-blue)
 ![react](https://img.shields.io/badge/react-v0.0.0--experimental--e5d06e34b-orange)
 ![react-dom](https://img.shields.io/badge/react--dom-v0.0.0--experimental--e5d06e34b-orange)
 
