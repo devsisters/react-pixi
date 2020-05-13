@@ -1,10 +1,11 @@
-import commonjs from 'rollup-plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
+import json from '@rollup/plugin-json'
+import babel from '@rollup/plugin-babel'
+import replace from '@rollup/plugin-replace'
+
 import filesize from 'rollup-plugin-filesize'
-import resolve from 'rollup-plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
-import json from 'rollup-plugin-json'
-import babel from 'rollup-plugin-babel'
-import replace from 'rollup-plugin-replace'
 import globals from 'rollup-plugin-node-globals'
 
 const prod = process.env.NODE_ENV === 'production'
@@ -29,6 +30,7 @@ function getConfig(dest, format) {
       json(),
       babel({
         extensions,
+        babelHelpers: 'runtime',
         exclude: 'node_modules/**',
       }),
       resolve({
