@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const React = require('react')
 const { BitmapText, Text } = require('../../docz-rp')
 
