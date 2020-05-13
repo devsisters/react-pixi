@@ -13,7 +13,9 @@ export const withFilters = (WrapperComponent, filters) => {
     const filterList = useRef(
       useMemo(() => {
         return keys.map(prop => {
-          const constructorArgs = props?.[prop]?.construct || []
+          // FIXME: https://github.com/rollup/rollup/issues/3469
+          const filterProp = props[prop] || {}
+          const constructorArgs = filterProp.construct || []
           return new filters[prop](...constructorArgs)
         })
       }, [keys])
