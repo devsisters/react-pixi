@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 let textures = []
 
 if (typeof window !== 'undefined') {
